@@ -1,0 +1,16 @@
+.container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.welcome {
+  background-color: #95f895;
+  padding: 30px;
+}
+
+.warning {
+  background-color: #e76c6c;
+  padding: 30px;
+}
+/*# sourceMappingURL=formctrl.css.map */
