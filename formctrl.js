@@ -22,9 +22,12 @@ soyadInput.addEventListener("keyup" , function(){
 
 button.addEventListener("click" , function(){
 
-    if(passInput.value !== passInput2.value && passInput.value.length & passInput2.value.length <= 8){
+    if(passInput.value !== passInput2.value && passInput.value.length <=8 && passInput2.value.length <= 8){
        war.style.display = "";
     }
-    wel.style.display = "";
+
+    else{
+        wel.style.display = "";
+    }
 });
 
