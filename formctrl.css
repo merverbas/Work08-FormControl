@@ -5,11 +5,13 @@
 }
 
 .welcome {
+  display: none;
   background-color: #95f895;
   padding: 30px;
 }
 
 .warning {
+  display: none;
   background-color: #e76c6c;
   padding: 30px;
 }
