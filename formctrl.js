@@ -5,29 +5,32 @@ const kullaniciInput = document.getElementById("kullaniciadi");
 const mailInput = document.getElementById("mail");
 const passInput = document.getElementById("pass");
 const passInput2 = document.getElementById("pass-try");
-document.getElementById("wel").style.display = "none";
-document.getElementById("war").style.display = "none";
+var ad ="";
+var soyad = ""; 
+
 
 adInput.addEventListener("keyup" , function(){
 
-    var ad = adInput.value;
-    kullaniciInput.value = ("@"+ad).toLowerCase();
+    ad = adInput.value;
 });
 
 soyadInput.addEventListener("keyup" , function(){
 
-    var soyad = soyadInput.value;
-    kullaniciInput.value = (kullaniciInput.value+soyad).toLowerCase();
+    soyad = soyadInput.value;
+    kullaniciInput.value = ("@"+ad+soyad).toLowerCase();
 }); 
 
 button.addEventListener("click" , function(){
 
-    if(passInput.value !== passInput2.value && passInput.value.length <=8 && passInput2.value.length <= 8){
-       war.style.display = "";
+    if(passInput.value === passInput2.value && passInput.value.length >= 8 ){
+       wel.style.display = "block";
+       war.style.display = "none";
+
     }
 
     else{
-        wel.style.display = "";
+        wel.style.display ="none";
+        war.style.display = "block";
     }
 });
 
