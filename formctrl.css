@@ -1,7 +1,9 @@
 .container {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  background-color: #ecd9c8;
+  margin-top: 150px;
+  margin-bottom: 150px;
   text-align: center;
+  
 }
 
 .welcome {
