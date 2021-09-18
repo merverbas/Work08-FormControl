@@ -22,7 +22,7 @@ soyadInput.addEventListener("keyup" , function(){
 
 button.addEventListener("click" , function(){
 
-    if(passInput.value === passInput2.value && passInput.value.length >= 8 ){
+    if(passInput.value === passInput2.value && passInput.value.length >= 4){
        wel.style.display = "block";
        war.style.display = "none";
 
